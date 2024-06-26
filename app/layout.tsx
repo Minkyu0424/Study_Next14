@@ -10,7 +10,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div>영화 휘뚜루 마뚜루</div>
+        {children}
+      </body>
     </html>
   )
 }
