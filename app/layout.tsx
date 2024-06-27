@@ -1,19 +1,21 @@
+import Link from "next/link";
+
 export const metadata = {
-  title: 'Welcome',
-  description: 'Welcome Next 14',
-}
+  title: "Welcome",
+  description: "Welcome Next 14",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body>
-        <div>영화 휘뚜루 마뚜루</div>
+        <Link href={"/movies"}>홈으로</Link>
         {children}
       </body>
     </html>
-  )
+  );
 }

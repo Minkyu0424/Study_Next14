@@ -6,6 +6,7 @@ interface OnlyVideosProps {
 
 const getMovie = async (id: string) => {
   const res = await fetch(`${URL}/${id}`);
+  throw new Error('something happened')
   return res.json();
 };
 
